@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | AI Engineer & Graphic Designer</title>
+  <meta name="description" content="Hussain Murtaza — AI Engineer & Graphic Designer. Portfolio showcasing AI projects, design work, and contact information." />
+  <!-- Open Graph / Social Preview -->
+  <meta property="og:title" content="Hussain Murtaza — Portfolio" />
+  <meta property="og:description" content="AI Engineer & Graphic Designer. Explore projects, experience, and get in touch." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://your-site.example/" />
+  <meta property="og:image" content="/social-preview.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="/favicon.ico" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a href="#home" class="skip-to-content">Skip to content</a>
+
+  <!-- Fixed Background Blobs -->
+  <div class="hero-background"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar fixed-top" id="main-nav">
+    <div class="container-fluid px-4 px-lg-5 d-flex justify-content-between align-items-center">
+      <a href="#home" class="logo-text">Hussain Murtaza</a>
+
+      <!-- Desktop Menu -->
+      <ul class="nav-links d-none d-lg-flex list-unstyled mb-0">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="navbar-toggler d-lg-none border-0" type="button" aria-label="Toggle menu">
+        <i class="fas fa-bars text-white fs-3"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div id="mobileMenu" class="mobile-menu">
+    <button id="closeMobileMenu" class="close-btn">&times;</button>
+    <ul class="mobile-nav-links">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <main class="hero-section animate-on-scroll" id="home">
+    <h1>Hello, I'm a <br><span class="gradient-text"><span id="role-type" class="typewriter">AI Engineer</span></span></h1>
+    <p>Creating innovative AI solutions and stunning visual designs that bring ideas to life</p>
+    <div class="hero-actions">
+      <button class="btn-explore" onclick="window.location.href='#projects'">Explore My Work</button>
+      <a href="Data Engineer Resume.pdf" class="btn-download" download target="_blank" rel="noopener">Download CV</a>
+    </div>
+    <a href="#about" class="scroll-link">
+      <div class="scroll-arrow">↓</div>
+    </a>
+  </main>
+
+  <!-- About Section -->
+  <section id="about" class="py-5 position-relative overflow-hidden animate-on-scroll">
+    <div class="container py-5">
+      <div class="about-container">
+        <div class="text-center mb-5">
+          <h2 class="display-4 fw-bold text-white mb-3">About Me</h2>
+          <div class="title-underline mx-auto"></div>
+        </div>
+
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <h3 class="h2 fw-bold text-white mb-4">Bridging Creativity with Technology</h3>
+            <p class="text-gray-300 lead mb-4">
+              I'm a creative professional who started as a graphic designer and evolved into the exciting world of artificial intelligence. My unique background allows me to create AI-powered solutions with a strong visual and user-centric approach.
+            </p>
+            <p class="text-gray-300 lead">
+              With a keen eye for design and a passion for emerging technologies, I specialize in developing intelligent systems that not only work efficiently but also look stunning and provide exceptional user experiences.
+            </p>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="cards-wrapper">
+              <!-- Graphic Design Card -->
+              <div class="info-card graphic-card">
+                <div class="icon-circle">
+                  <i class="fas fa-palette"></i>
+                </div>
+                <div class="info-content">
+                  <h5 class="fw-bold text-white mb-2">Graphic Design</h5>
+                  <p class="text-gray-400 mb-0">Professional background in visual design, branding, and creative direction</p>
+                </div>
+              </div>
+
+              <!-- AI Development Card -->
+              <div class="info-card ai-card">
+                <div class="icon-circle">
+                  <i class="fas fa-microchip"></i>
+                </div>
+                <div class="info-content">
+                  <h5 class="fw-bold text-white mb-2">AI Development</h5>
+                  <p class="text-gray-400 mb-0">Crafting intelligent solutions using machine learning and AI technologies</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chatbot Playground removed -->
+  <!-- Chatbot Playground (Python editor) removed per user request. -->
+
+  <!-- Experience Section -->
+  <section id="experience" class="section-padding bg-slate-900">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold text-white">Experience</h2>
+        <div class="title-underline"></div>
+      </div>
+      <div class="timeline">
+        <!-- Experience 1 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h4 class="fw-bold text-white mb-1">Internship</h4>
+            <p class="text-purple-400 mb-2">Media Mates Advertising Agency</p>
+            <p class="text-gray-300 small mb-2">Recent</p>
+            <p class="text-gray-400">Assisted in graphic design and video editing projects. Gained hands-on experience with design tools and collaborative creative workflows.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section-padding bg-gradient-slate animate-on-scroll">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold text-white">Skills & Expertise</h2>
+        <div class="title-underline"></div>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <!-- Python -->
+        <div class="col-md-6 col-lg-4">
+          <div class="skill-card">
+            <div class="icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" width="42" height="42" loading="lazy">
+            </div>
+            <h5>Python</h5>
+            <div class="progress"><div class="progress-bar" style="width:85%"></div></div><small>85%</small>
+          </div>
+        </div>
+
+        <!-- Machine Learning -->
+        <div class="col-md-6 col-lg-4">
+          <div class="skill-card">
+            <div class="icon">
+              <img src="images/Machince learning.png" alt="Machine Learning" width="42" height="42" loading="lazy">
+            </div>
+            <h5>Machine Learning</h5>
+            <div class="progress"><div class="progress-bar" style="width:80%"></div></div><small>80%</small>
+          </div>
+        </div>
+
+        <!-- Generative AI -->
+        <div class="col-md-6 col-lg-4">
+          <div class="skill-card">
+            <div class="icon">
+              <img src="images/Generative AI.png" alt="Generative AI / LLM" width="42" height="42" loading="lazy">
+            </div>
+            <h5>Generative AI / LLM</h5>
+            <div class="progress"><div class="progress-bar" style="width:78%"></div></div><small>78%</small>
+          </div>
+        </div>
+
+        <!-- TensorFlow -->
+        <div class="col-md-6 col-lg-4">
+          <div class="skill-card">
+            <div class="icon">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow" width="42" height="42" loading="lazy">
+            </div>
+            <h5>TensorFlow</h5>
+            <div class="progress"><div class="progress-bar" style="width:90%"></div></div><small>90%</small>
+          </div>
+        </div>
+
+        <!-- Deep Learning -->
+        <div class="col-md-6 col-lg-4">
+          <div class="skill-card">
+            <div class="icon">
+              <img src="images/deep-learning.png" alt="Deep Learning" width="42" height="42" loading="lazy">
+            </div>
+            <h5>Deep Learning</h5>
+            <div class="progress"><div class="progress-bar" style="width:75%"></div></div><small>75%</small>
+          </div>
+        </div>
+
+        <!-- Design & Web Dev -->
+        <div class="col-md-6 col-lg-4">
+          <div class="skill-card">
+            <div class="icon">
+              <img src="images/developer.png" alt="Design & Web Dev" width="42" height="42" loading="lazy">
+            </div>
+            <h5>Design & Web Dev</h5>
+            <div class="progress"><div class="progress-bar" style="width:88%"></div></div><small>88%</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section (removed temporarily) -->
+  <!-- Certifications removed temporarily. To restore, re-add the section below or check version history. -->
+
+  <!-- Projects Section -->
+  <section id="projects" class="section-padding bg-slate-900 animate-on-scroll stagger-fade">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold text-white">Featured Projects</h2>
+        <div class="title-underline"></div>
+        <p class="text-gray-400 lead">A showcase of my work combining artificial intelligence and creative design</p>
+      </div>
+      <div class="row g-4">
+        
+        <!-- Project 1: AI Image Generator -->
+        <div class="col-md-6 col-lg-4 mb-5">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="images/Banner.png" alt="AI Image Generator" loading="lazy">
+            </div>
+            <div class="project-content">
+              <div class="d-flex justify-content-between align-items-start mb-3">
+                <span class="project-badge ai">AI Development</span>
+              </div>
+              <h5 class="project-title">AI Image Generator</h5>
+              <p class="project-desc">Advanced image generation using diffusion models and neural networks</p>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>TensorFlow</span>
+                <span>GANs</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Hussain-Murtazaa/Conversational-Groq-ChatBot?tab=readme-ov-file" target="_blank" class="link-github">
+                  <i class="fab fa-github"></i> Source Code
+                </a>
+                <a href="https://groqconversational-chatbot.streamlit.app/" target="_blank" class="link-demo">
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Flower Classification -->
+        <div class="col-md-6 col-lg-4 mb-5">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="images/Banner2.png" alt="Flower Classification" loading="lazy">
+            </div>
+            <div class="project-content">
+              <div class="d-flex justify-content-between align-items-start mb-3">
+                <span class="project-badge ai">AI Development</span>
+              </div>
+              <h5 class="project-title">Flower Classification</h5>
+              <p class="project-desc">Machine learning model for accurate flower species identification</p>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>TensorFlow</span>
+                <span>Classification</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Hussain-Murtazaa/Flower-Classification" target="_blank" class="link-github">
+                  <i class="fab fa-github"></i> Source Code
+                </a>
+                <a href="https://iris-flower-species-classifier.streamlit.app/" target="_blank" class="link-demo">
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: ChatBot Application -->
+        <div class="col-md-6 col-lg-4 mb-5">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="images/Banner.png" alt="Conversational ChatBot" loading="lazy">
+            </div>
+            <div class="project-content">
+              <div class="d-flex justify-content-between align-items-start mb-3">
+                <span class="project-badge ai">AI Development</span>
+              </div>
+              <h5 class="project-title">Conversational ChatBot</h5>
+              <p class="project-desc">Real-time conversational AI powered by Groq LLM with advanced NLP</p>
+              <div class="project-tags">
+                <span>LLM</span>
+                <span>Groq</span>
+                <span>NLP</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Hussain-Murtazaa/Conversational-Groq-ChatBot" target="_blank" class="link-github">
+                  <i class="fab fa-github"></i> Source Code
+                </a>
+                <a href="https://groqconversational-chatbot.streamlit.app/" target="_blank" class="link-demo">
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Computer Vision System -->
+        <div class="col-md-6 col-lg-4 mb-5">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="images/Banner2.png" alt="Computer Vision" loading="lazy">
+            </div>
+            <div class="project-content">
+              <div class="d-flex justify-content-between align-items-start mb-3">
+                <span class="project-badge ai">AI Development</span>
+              </div>
+              <h5 class="project-title">Computer Vision System</h5>
+              <p class="project-desc">Object detection and image segmentation using deep neural networks</p>
+              <div class="project-tags">
+                <span>OpenCV</span>
+                <span>YOLO</span>
+                <span>CNN</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" class="link-github">
+                  <i class="fab fa-github"></i> Source Code
+                </a>
+                <a href="#" target="_blank" class="link-demo">
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: NLP Text Analysis -->
+        <div class="col-md-6 col-lg-4 mb-5">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="images/Banner.png" alt="NLP Text Analysis" loading="lazy">
+            </div>
+            <div class="project-content">
+              <div class="d-flex justify-content-between align-items-start mb-3">
+                <span class="project-badge ai">AI Development</span>
+              </div>
+              <h5 class="project-title">NLP Text Analysis</h5>
+              <p class="project-desc">Sentiment analysis and text classification using transformer models</p>
+              <div class="project-tags">
+                <span>BERT</span>
+                <span>NLP</span>
+                <span>PyTorch</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" class="link-github">
+                  <i class="fab fa-github"></i> Source Code
+                </a>
+                <a href="#" target="_blank" class="link-demo">
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: Predictive Analytics Dashboard -->
+        <div class="col-md-6 col-lg-4 mb-5">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="images/Banner2.png" alt="Analytics Dashboard" loading="lazy">
+            </div>
+            <div class="project-content">
+              <div class="d-flex justify-content-between align-items-start mb-3">
+                <span class="project-badge ai">AI Development</span>
+              </div>
+              <h5 class="project-title">Predictive Analytics Dashboard</h5>
+              <p class="project-desc">Real-time data visualization and forecasting with interactive dashboards</p>
+              <div class="project-tags">
+                <span>Data Science</span>
+                <span>Visualization</span>
+                <span>ML</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" class="link-github">
+                  <i class="fab fa-github"></i> Source Code
+                </a>
+                <a href="#" target="_blank" class="link-demo">
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section-padding bg-gradient-slate animate-on-scroll">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold text-white">Get In Touch</h2>
+        <div class="title-underline"></div>
+        <p class="text-gray-400 lead">Have a project in mind? Let's collaborate and create something amazing!</p>
+      </div>
+
+      <!-- Contact Cards -->
+      <div class="row g-4 justify-content-center mb-5">
+        <!-- Email Card -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="contact-card">
+            <div class="contact-icon email-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h5 class="fw-bold text-white mb-2">Email</h5>
+            <p class="text-gray-400 mb-3">Send me a message</p>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hussainmurtazaqamri1@gmail.com&su=Hello%20Hussain!&body=Hi%20Hussain,%0D%0A%0D%0AI%20came%20across%20your%20portfolio%20and%20would%20love%20to%20discuss..." 
+            target="_blank" 
+            class="contact-link email">hussainmurtazaqamri1@gmail.com</a>
+            </div>
+          </div>
+
+        <!-- Phone Card -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="contact-card">
+            <div class="contact-icon whatsapp-icon">
+              <i class="fab fa-whatsapp"></i>
+            </div>
+            <h5 class="fw-bold text-white mb-2">WhatsApp</h5>
+            <p class="text-gray-400 mb-3">Chat with me directly</p>
+            <a href="https://wa.me/923310334453" target="_blank" class="contact-link whatsapp">+92 331 0334453</a>
+           </div>
+        </div>
+
+        <!-- Location Card -->
+        <div class="col-md-6 col-lg-4">
+          <div class="contact-card">
+            <div class="contact-icon location-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h5 class="fw-bold text-white mb-2">Location</h5>
+            <p class="text-gray-400 mb-3">Based in</p>
+            <p class="contact-link">Karachi, Pakistan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="contact-form-container">
+            <h3 class="fw-bold text-white mb-4 text-center">Send Me a Message</h3>
+            <form class="contact-form" method="POST" action="https://api.web3forms.com/submit" id="contactForm">
+              <input type="hidden" name="access_key" value="0f9008f0-4561-4c1a-bc41-b1abecd92f24">
+              <input type="hidden" name="to_email" value="hussainmurtazaqamri1@gmail.com">
+              <input type="hidden" name="subject" value="New Contact Form Submission from Portfolio">
+              <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                  <input type="text" class="form-control contact-input" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="email" class="form-control contact-input" name="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control contact-input" name="subject_input" placeholder="Subject" required>
+              </div>
+              <div class="mb-4">
+                <textarea class="form-control contact-input" name="message" rows="5" placeholder="Your Message" required></textarea>
+              </div>
+              <button type="submit" class="btn-explore w-100">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social Links -->
+      <div class="text-center mt-5">
+        <h5 class="text-white mb-4">Follow Me On Social Media</h5>
+        <div class="social-links">
+          <a href="https://github.com" target="_blank" class="social-icon" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com" target="_blank" class="social-icon" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://twitter.com" target="_blank" class="social-icon" title="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://instagram.com" target="_blank" class="social-icon" title="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 py-4 text-center text-gray-400">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Hussain Murtaza. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <div id="toast" class="toast-message" role="status" aria-live="polite"></div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+  <!-- Sticky Chatbot Widget -->
+  <div id="chatBotButton" class="chatbot-button" aria-label="Open chat" title="Chat">
+    <div class="robot-icon" id="robotIcon" aria-hidden="true">
+      <div class="antenna"></div>
+      <div class="robot-body">
+        <span class="eye left"></span>
+        <span class="eye right"></span>
+        <div class="mouth"></div>
+      </div>
+    </div>
+  </div>
+  <div id="chatWidget" class="chat-widget" aria-hidden="true">
+    <div class="chat-header">
+      <div class="chat-title">Hi — Ask about Hussain</div>
+      <button id="chatClose" class="chat-close" aria-label="Close chat">×</button>
+    </div>
+    <div id="chatBody" class="chat-body" role="log" aria-live="polite"></div>
+    <div class="chat-footer">
+      <input id="chatWidgetInput" class="chat-widget-input" placeholder="Ask about Hussain..." aria-label="Ask about Hussain">
+      <button id="chatWidgetSend" class="btn-explore">Send</button>
+    </div>
+  </div>
+  <script>
+    window.addEventListener('load', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      history.replaceState(null, null, window.location.pathname);
+    });
+  </script>
+</body>
+</html>
